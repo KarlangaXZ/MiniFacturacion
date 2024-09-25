@@ -77,7 +77,7 @@ public class Factura
         }
     }
 
-    // Método para imprimir los detalles de la factura
+    //Aqui Impriendo la Factura.
     public void ImprimirFactura()
     {
         Console.WriteLine($"Factura de: {Cliente}");
