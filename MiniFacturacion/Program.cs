@@ -68,15 +68,14 @@ namespace MiAppPrincipal
             decimal totalGeneral = 0;
             foreach (var factura in facturas)
             {
-                factura.AplicarDescuento(); // Aplica el descuento si corresponde
+                factura.AplicarDescuento(); // Para aplicar el descuento.
                 factura.ImprimirFactura(); // Imprime los detalles de cada factura
                 totalGeneral += factura.CalcularTotal(); // Suma el total de cada factura
             }
 
-            // Imprimir el total general
             Console.WriteLine($"El total de todas las facturas es: RD${totalGeneral}");
 
-            // Meta de facturación
+            // Meta de Facturacion
             decimal metaFacturacion = 50000;
             Console.WriteLine($"Meta de facturación: RD${metaFacturacion}");
 
