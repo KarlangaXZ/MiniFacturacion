@@ -42,10 +42,9 @@ namespace MiAppPrincipal
 
         public static void Main(string[] args)
         {
-            // Crear una lista para guardar las facturas
+         
             List<Factura> facturas = new List<Factura>();
 
-            // Crear 3 facturas
             Factura factura1 = new Factura("Cliente 1");
             factura1.AgregarArticulo(new Articulos("Patrón", "Silver", 5500));
             factura1.AgregarArticulo(new Articulos("7up", "Normal", 50));
@@ -64,7 +63,7 @@ namespace MiAppPrincipal
             facturas.Add(factura2);
             facturas.Add(factura3);
 
-            // Calcular el total de todas las facturas
+            
             decimal totalGeneral = 0;
             foreach (var factura in facturas)
             {
@@ -75,7 +74,7 @@ namespace MiAppPrincipal
 
             Console.WriteLine($"El total de todas las facturas es: RD${totalGeneral}");
 
-            // Meta de Facturacion
+            // Meta de facturacion
             decimal metaFacturacion = 50000;
             Console.WriteLine($"Meta de facturación: RD${metaFacturacion}");
 
